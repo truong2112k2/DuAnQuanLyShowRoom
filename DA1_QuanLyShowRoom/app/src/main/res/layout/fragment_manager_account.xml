@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fragment.FragmentManagerAccount">
+
+
+    <TextView
+        android:id="@+id/txtshowNumberUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#EC2112"
+        >
+
+    </TextView>
+    <TableLayout
+        android:id="@+id/table_showAccount"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:stretchColumns="0,1,2"
+        android:layout_height="match_parent">
+        <TableRow>
+            <TextView
+                android:layout_height="30dp"
+                android:layout_width="100dp"
+                android:text="Tên đăng nhập"
+                android:gravity="center"
+                android:textSize="15sp"
+
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SmallSp" />
+            <TextView
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:text="Mật khẩu"
+                android:textStyle="bold"
+
+                android:textSize="15sp"
+                tools:ignore="HardcodedText,SmallSp" />
+            <TextView
+                android:layout_height="30dp"
+                android:layout_width="80dp"
+                android:gravity="center"
+
+                android:text="Email"
+                android:textStyle="bold"
+
+                android:textSize="15sp"
+                tools:ignore="HardcodedText,SmallSp" />
+        </TableRow>
+
+
+    </TableLayout>
+</LinearLayout>

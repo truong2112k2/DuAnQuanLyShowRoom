@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+
+    tools:context=".MainActivity">
+
+ <ImageView
+     android:id="@+id/imgGifCarMove"
+     android:layout_width="match_parent"
+     android:layout_height="150dp" />
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Wait..."
+     android:textSize="25sp"
+     android:textStyle="bold"
+     android:textColor="@color/white"
+     tools:ignore="HardcodedText">
+
+ </TextView>
+
+
+
+ <com.mikhaellopez.circularprogressbar.CircularProgressBar
+     android:id="@+id/progress_loading"
+     android:layout_width="80dp"
+     android:visibility="gone"
+     android:layout_height="80dp"
+     app:cpb_progressbar_color="@color/white"
+     app:cpb_progress="30"
+     app:cpb_indeterminate_mode="true"
+     >
+
+ </com.mikhaellopez.circularprogressbar.CircularProgressBar>
+
+
+
+
+</LinearLayout>

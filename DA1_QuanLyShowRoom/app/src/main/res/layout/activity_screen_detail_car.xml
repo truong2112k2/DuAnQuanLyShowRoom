@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_7"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ScreenDetailCar">
+
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgShowImageCarForDetail"
+            android:layout_width="220dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            app:shapeAppearanceOverlay="@style/imageview"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/background_car" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_corners"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_editext_detail"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:text="Thông số chi tiết"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên"
+                    android:textSize="15sp"
+
+                    android:textStyle="italic"
+                    tools:ignore="HardcodedText,SmallSp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtshowNameCarScreenDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Mazda 1"
+                    android:textColor="#16578A"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày ra mắt"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    tools:ignore="HardcodedText,SmallSp"></TextView>
+
+                <TextView
+                    android:id="@+id/txtshowYearCarScreenDetail"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Mazda 1"
+
+                    android:textColor="#16578A"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thương hiệu"
+                    android:textSize="15sp"
+
+
+                    android:textStyle="italic"
+                    tools:ignore="HardcodedText,SmallSp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtshowBrandCarScreenDetail"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Mazda 1"
+                    android:textColor="#16578A"
+
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText"></TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Màu sắc"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+
+                    tools:ignore="HardcodedText,SmallSp"></TextView>
+
+                <TextView
+                    android:id="@+id/txtshowColorCarScreenDetail"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    android:text="Mazda 1"
+
+                    android:textColor="#16578A"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số chỗ ngồi"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+
+                    tools:ignore="HardcodedText,SmallSp"></TextView>
+
+                <TextView
+                    android:id="@+id/txtshowSumOfSeatCarScreenDetail"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Mazda 1"
+                    android:textColor="#16578A"
+
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText"></TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dung tích"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    tools:ignore="HardcodedText,SmallSp"></TextView>
+
+                <TextView
+                    android:id="@+id/txtshowCapacityCarScreenDetail"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Mazda 1"
+                    android:textColor="#16578A"
+
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSetDate"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_editext_detail"
+            android:text="Đặt lịch xem"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

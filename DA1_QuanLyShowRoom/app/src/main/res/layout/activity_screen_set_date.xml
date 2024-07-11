@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ScreenSetDate">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Đặt Lịch Xem Trực Tiếp"
+          android:textStyle="bold"
+          android:textSize="28sp"
+
+          android:layout_marginStart="10dp"
+          tools:ignore="HardcodedText">
+      </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập vào đầy đủ thông tin\nđể đặt lịch xem trực tiếp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:textColor="#ABA1A1"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        tools:ignore="HardcodedText">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông Tin Của Bạn"
+        android:textStyle="bold"
+        android:gravity="start"
+        android:paddingStart="20dp"
+        android:background="#F5F1ED"
+        android:textSize="18sp"
+        android:layout_gravity="start"
+
+        tools:ignore="HardcodedText,RtlSymmetry">
+    </TextView>
+    <EditText
+        android:id="@+id/edtInputUserNameSetDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="15sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_editext"
+        android:drawableStart="@drawable/change_icon_name"
+        android:drawablePadding="8dp"
+        android:inputType="text"
+        android:hint="Họ và tên"
+        android:paddingStart="10dp"
+        tools:ignore="HardcodedText,RtlSymmetry,TextFields">
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtInputLocationSetDate"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="15sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_editext"
+        android:drawableStart="@drawable/change_icon_location"
+        android:drawablePadding="8dp"
+        android:hint="Địa chỉ"
+        android:layout_marginTop="12dp"
+        android:paddingStart="10dp"
+        tools:ignore="HardcodedText,RtlSymmetry">
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/edtInputNumberPhoneSetDate"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="15sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_editext"
+        android:drawableStart="@drawable/change_icon_phone"
+        android:drawablePadding="8dp"
+        android:inputType="number"
+        android:hint="Số điện thoại"
+        android:paddingStart="10dp"
+        tools:ignore="HardcodedText,RtlSymmetry,TextFields">
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông Tin Khác"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:paddingStart="20dp"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:background="#F5F1ED"
+        android:layout_gravity="start"
+        tools:ignore="HardcodedText,RtlHardcoded">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:hint="Địa điểm gặp mặt"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText">
+        <AutoCompleteTextView
+            android:id="@+id/spnChoiceLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:layout_marginTop="10dp"
+
+            android:background="#F5F1ED"
+            android:text="Chọn địa điểm">
+        </AutoCompleteTextView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageButton
+                android:id="@+id/btnPickDateScreenSetDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_date"
+                >
+            </ImageButton>
+            <EditText
+                android:id="@+id/txtShowDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn ngày"
+                android:enabled="false"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                tools:ignore="HardcodedText,TextFields">
+            </EditText>
+        </LinearLayout>
+         <View
+             android:layout_width="0dp"
+             android:layout_height="1dp"
+             android:layout_weight="1"
+             >
+         </View>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageButton
+                android:id="@+id/btnPickTimeScreenSetDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_time"
+                >
+            </ImageButton>
+            <EditText
+                android:id="@+id/txtShowTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn giờ"
+
+                android:enabled="false"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                tools:ignore="HardcodedText,TextFields">
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnComFirmSetDate"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_editext_detail"
+        android:text="Đặt lịch"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>

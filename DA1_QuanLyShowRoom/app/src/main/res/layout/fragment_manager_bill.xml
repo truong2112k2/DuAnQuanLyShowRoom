@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    tools:context="fragment.FragmentManagerDate">
+
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="70dp"
+        >
+        <ImageButton
+            android:id="@+id/btnNotification"
+            android:layout_width="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="38dp"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_notification"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/txtNumberNofi"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|end"
+
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="25dp"
+
+            android:background="@drawable/layout_notification"
+            tools:ignore="HardcodedText,SmallSp">
+
+        </TextView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Cuộc hẹn đã xác nhận"
+           android:textSize="32sp"
+           android:layout_gravity="center"
+           android:layout_marginTop="10dp"
+           android:textStyle="bold"
+           tools:ignore="HardcodedText">
+
+       </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_showAcceptDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

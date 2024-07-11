@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_linear5"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtShowNameCustomer_ScreenDateForUser"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center|start"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp"
+                android:text="Name customer"
+                tools:ignore="HardcodedText,SmallSp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                >
+
+            </View>
+            <TextView
+                android:id="@+id/txtShowNameCarChooseDateForUse"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:gravity="center|start"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Name carChoice"
+                tools:ignore="HardcodedText,SmallSp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                >
+
+            </View>
+            <TextView
+                android:id="@+id/txtShowDate_DateForUse"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:gravity="center|start"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Name carChoice"
+                tools:ignore="HardcodedText,SmallSp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

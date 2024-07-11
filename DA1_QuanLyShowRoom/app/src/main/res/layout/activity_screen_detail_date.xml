@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/white"
+    tools:context=".ScreenDetailDate">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="32sp"
+            android:text="Thông tin chi tiết"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_linear4"
+            android:textStyle="bold"
+            android:gravity="center"
+            tools:ignore="HardcodedText">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_linear5"
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Thông tin người dùng"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                tools:ignore="HardcodedText">
+            </TextView>
+            <!--        Thông tin người dùng-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:text="Tên người dùng"
+                    android:gravity="center"
+
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText">
+                </TextView>
+                <TextView
+                    android:id="@+id/txtShowNameUserCreenDetailDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Nguyễn Văn A"
+                    android:paddingStart="10dp"
+                    android:textSize="20sp"
+
+                    tools:ignore="HardcodedText,InefficientWeight,RtlSymmetry">
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="220dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                >
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:text="Địa chỉ"
+                    android:textSize="23sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText">
+                </TextView>
+                <TextView
+                    android:id="@+id/txtShowUserAddressCreenDetailDate"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="Số 36 - Hai Bà Trưng- Hà Nội"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText,InefficientWeight,RtlSymmetry">
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="220dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                >
+            </View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="Số điện thoại"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/txtShowUserNumberPhoneCreenDetailDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="0332164075"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    tools:ignore="HardcodedText,InefficientWeight,RtlSymmetry">
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="220dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+
+                >
+            </View>
+        </LinearLayout>
+<!--        Thông tin cuộc hẹn-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_linear5"
+
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Thông tin cuộc hẹn"
+              android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                tools:ignore="HardcodedText">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:text="Điểm hẹn"
+                    android:gravity="center"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText">
+                </TextView>
+                <TextView
+                    android:id="@+id/txtShowMeetLocationCreenDetailDate"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="Hà Nội"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:textSize="20sp"
+
+                    tools:ignore="HardcodedText,InefficientWeight,RtlSymmetry">
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="220dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+
+                >
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:text="Ngày hẹn"
+                    android:textSize="23sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText">
+                </TextView>
+                <TextView
+                    android:id="@+id/txtShowMeetDateCreenDetailDate"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="12 / 1 / 2003"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+
+                    android:textSize="20sp"
+
+                    tools:ignore="HardcodedText,InefficientWeight,RtlSymmetry">
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="220dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+
+                >
+            </View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="Giờ hẹn"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/txtShowMeetTimeCreenDetailDate"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="12 : 00"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    tools:ignore="HardcodedText,InefficientWeight,RtlSymmetry">
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="220dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+
+                >
+            </View>
+        </LinearLayout>
+
+
+
+        <!--        Thông tin xe-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_linear5"
+
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Thông tin xe"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                tools:ignore="HardcodedText">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:text="Tên xe"
+                    android:gravity="center"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText">
+                </TextView>
+                <TextView
+                    android:id="@+id/txtShowNameCarCreenDetailDate"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="Mazda 2018"
+                    android:paddingStart="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText,InefficientWeight,RtlSymmetry">
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="220dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+
+                >
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:text="Giá thành"
+                    android:textSize="23sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText">
+                </TextView>
+                <TextView
+                    android:id="@+id/txtShowPriceCarCreenDetailDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="100.000.000 Vnđ"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+
+                    tools:ignore="HardcodedText,InefficientWeight,RtlSymmetry">
+                </TextView>
+            </LinearLayout>
+            <View
+                android:layout_width="220dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+
+                >
+            </View>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDetailCreenShowDate"
+                android:layout_width="170dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_button3"
+                android:text="Chi Tiết"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,SmallSp">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+</LinearLayout>

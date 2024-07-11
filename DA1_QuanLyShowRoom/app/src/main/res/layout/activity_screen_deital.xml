@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    tools:context=".ScreenDetail">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông Tin Chi Tiết"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText">
+
+        </TextView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_name_car"
+                tools:ignore="HardcodedText">
+            </ImageView>
+            <EditText
+                android:id="@+id/edtShowName"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="Tên sản phẩm"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText">
+            </EditText>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/icon_brand"
+                tools:ignore="HardcodedText">
+            </ImageView>
+
+            <EditText
+                android:id="@+id/edtShowBrand"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_gravity="center"
+                android:text="Hãng sản xuất"
+                android:gravity="center"
+
+                android:textSize="15sp"
+                tools:ignore="HardcodedText">
+
+            </EditText>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:src="@drawable/icon_date"
+                tools:ignore="HardcodedText">
+            </ImageView>
+            <EditText
+                android:id="@+id/edtShowDate"
+
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="Ngày sản xuất"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:textSize="15sp"
+                tools:ignore="HardcodedText">
+            </EditText>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:src="@drawable/icon_color"
+                android:scaleType="fitXY"
+
+                tools:ignore="HardcodedText">
+            </ImageView>
+            <EditText
+                android:id="@+id/edtShowColor"
+
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="Tên sản phẩm"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:textSize="15sp"
+                tools:ignore="HardcodedText">
+            </EditText>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:src="@drawable/icon_seat"
+                tools:ignore="HardcodedText">
+            </ImageView>
+            <EditText
+                android:id="@+id/edtShowSumofSeat"
+                android:inputType="number"
+
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="Tên sản phẩm"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:textSize="15sp"
+                tools:ignore="HardcodedText">
+            </EditText>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/icon_capacity"
+                tools:ignore="HardcodedText">
+            </ImageView>
+            <EditText
+                android:id="@+id/edtShowCapacity"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="Tên sản phẩm"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:textSize="15sp"
+                tools:ignore="HardcodedText">
+            </EditText>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:src="@drawable/icon_price2"
+                android:scaleType="fitXY"
+
+                tools:ignore="HardcodedText">
+            </ImageView>
+            <EditText
+                android:id="@+id/edtShowPrice"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="Tên sản phẩm"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:gravity="center"
+
+                tools:ignore="HardcodedText">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/switchSetSale"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="Thêm vào mục giảm giá"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <EditText
+                android:id="@+id/edtInputPercent"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:hint="Nhập vào % giảm giá"
+
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:ignore="HardcodedText">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUpdateCar"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_editext_detail"
+                android:text="Cập nhật"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                >
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDeleteCar"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_editext_detail"
+                android:textColor="@color/white"
+                android:text="Xóa sản phẩm"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

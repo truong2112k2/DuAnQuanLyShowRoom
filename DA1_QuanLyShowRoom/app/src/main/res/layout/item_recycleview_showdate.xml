@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_linear5"
+    android:layout_marginTop="10dp"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    tools:ignore="UselessParent">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtShowNameCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center|start"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            android:text="Name customer"
+            tools:ignore="HardcodedText,SmallSp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            >
+
+        </View>
+        <TextView
+            android:id="@+id/txtShowNameCarChoose"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:gravity="center|start"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Name carChoice"
+            tools:ignore="HardcodedText,SmallSp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnDetail"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_plus"
+            />
+
+
+        <ImageButton
+            android:id="@+id/btnAcceptDate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+           android:layout_marginBottom="5dp"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_confirm"
+            />
+
+        <ImageButton
+            android:id="@+id/btnCancelDateForAdmin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_cancel"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

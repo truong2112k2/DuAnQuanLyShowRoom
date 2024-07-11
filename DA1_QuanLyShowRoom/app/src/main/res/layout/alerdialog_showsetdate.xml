@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="500dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/shape_linear4"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Chờ xét duyệt"
+            android:textSize="32sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText">
+        </TextView>
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_showDate"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        tools:listitem="@layout/item_recycleview_showdate"
+        android:layout_height="wrap_content" />
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/progressbar_showSetDate"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="30dp"
+        app:cpb_indeterminate_mode="true"
+        app:cpb_progressbar_color="#21AFEF"
+
+        >
+    </com.mikhaellopez.circularprogressbar.CircularProgressBar>
+
+
+    <TextView
+        android:id="@+id/txtStatusList"
+        android:layout_width="wrap_content"
+        android:text="Danh sách lịch hẹn hiện đang trống"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText">
+    </TextView>
+</LinearLayout>

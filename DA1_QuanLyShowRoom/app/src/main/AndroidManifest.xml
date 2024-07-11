@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon_car"
+        android:label="Quản lý Showroom Demo"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.DA1_QuanLyShowRoom"
+        tools:targetApi="31">
+        <activity
+            android:name=".ScreenShowDateForUser"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenDetailDate"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenSetDate"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenDetailCar"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenResetPasswordUser"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenHome"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenRegisterAccount"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenDetail"
+            android:exported="false" />
+        <activity
+            android:name="fragment.FragmentManagerCar"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".ScreenLoginAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".testActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenAdMinManager"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenAddDataCar"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenLogIn"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

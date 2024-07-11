@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+      <item
+          android:title="Quản lý tài khoản"
+          tools:ignore="HardcodedText">
+          <menu>
+              <item
+                  android:id="@+id/icon_home"
+                  android:icon="@drawable/icon_home"
+                  android:title="Trang chủ"
+                  tools:ignore="HardcodedText" />
+              <item
+                  android:id="@+id/icon_date"
+                  android:icon="@drawable/icon_view_date"
+                  android:title="Lịch hẹn của bạn"
+                  tools:ignore="HardcodedText" />
+              <item
+                  android:id="@+id/icon_changepass"
+                  android:icon="@drawable/icon_change_password2"
+                  android:title="Đổi mật khẩu"
+                  tools:ignore="HardcodedText" />
+
+              <item
+                  android:id="@+id/icon_delete_account"
+                  android:icon="@drawable/icon_delete_account"
+                  android:title="Xóa tài khoản"
+                  tools:ignore="HardcodedText" />
+
+              <item
+                  android:id="@+id/icon_out"
+                  android:icon="@drawable/icon_exit"
+                  android:title="Thoát"
+                  tools:ignore="HardcodedText" />
+          </menu>
+      </item>
+
+
+
+
+</menu>

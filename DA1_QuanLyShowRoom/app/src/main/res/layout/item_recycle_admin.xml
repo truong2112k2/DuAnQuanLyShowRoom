@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginStart="2dp"
+    android:background="@drawable/shape_button2"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgShowImageCar"
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        app:shapeAppearanceOverlay="@style/imageviewcircle"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/avatars" />
+    <TextView
+        android:id="@+id/txtshowNameCar"
+        android:layout_width="wrap_content"
+        android:textSize="13sp"
+        android:text="Name Car"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText">
+    </TextView>
+    <LinearLayout
+        android:layout_width="110dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/txtShowCarPrice"
+            android:layout_width="90dp"
+            android:textSize="10sp"
+            android:text="Name Car"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="5dp"
+            tools:ignore="HardcodedText,RtlSymmetry">
+        </TextView>
+        <ImageView
+            android:id="@+id/btnGetMoreInfomation"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_more_info"
+            >
+        </ImageView>
+    </LinearLayout>
+</LinearLayout>
